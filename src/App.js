@@ -12,7 +12,7 @@ function App() {
             <Container>
                 <Header />
             </Container>
-            <Container style = { right } className = "right">
+            <Container className = "right">
                 <About />
                 <Project />
                 <Blog />
@@ -20,11 +20,6 @@ function App() {
             </Container>
         </div>
     );
-}
-
-const right = {
-    float: "right",
-    marginLeft: "30%"
 }
 
 export default App;

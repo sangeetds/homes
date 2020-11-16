@@ -15,7 +15,7 @@
 .footer{
   margin-top: 1rem;
   padding: 2%;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -74,6 +74,8 @@ li {
 
 .right {
     background: #ddd;
+    float: right;
+    margin-left: 30%;
 }
 
 .right ::selection {
@@ -89,8 +91,8 @@ li {
     z-index: 10;
     position: relative;
     line-height: 0.6em;
-    pointer-events: none;
-    flex: 1 100%;
+    /* pointer-events: none; */
+    /* flex: 1 100%; */
 }
 
 .noHover:hover {
@@ -127,4 +129,54 @@ li {
 
 .mail:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .head {
+        position: relative;
+        padding-left: 10px;
+        height: 0px;
+        width: 100%;
+        display: inline-block;
+        overflow:visible;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .me {
+        display: none;
+    }
+
+    .work {
+        display: none;
+    }
+
+    .hey {
+        margin-bottom: -20px;
+        padding: 0;
+        width: 300px;
+    }
+
+    .right {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .heading {
+        font-size: 90px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1365px) {
+    .right {
+        width: 70%;
+    }
 }
