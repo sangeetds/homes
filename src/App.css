@@ -13,11 +13,8 @@
 }
 
 .footer{
-  margin-top: 1rem;
-  padding: 2%;
-  position: relative;
-  bottom: 0;
-  left: 0;
+  margin-top: 8rem;
+  padding: 1%;
   width: 100%;
 }
 
@@ -72,6 +69,29 @@ li {
     height: 350px;
 }
 
+.blogBox {
+    background: #ff5722;
+    color: #FFF;
+    text-align: center;
+    margin: -110px 50px 0px 50px;
+    padding: 50px;
+    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    height: 350px;
+}
+
+.contactBox {
+    background: #3f51b5;
+    color: #FFF;
+    margin: -110px 50px 50px 50px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    height: 350px;
+}
+
 .right {
     background: #ddd;
     float: right;
@@ -97,29 +117,6 @@ li {
 
 .noHover:hover {
     color: #000;
-}
-
-.blogBox {
-    background: #ff5722;
-    color: #FFF;
-    text-align: center;
-    margin: -110px 50px 0px 50px;
-    padding: 50px;
-    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    height: 350px;
-}
-
-.contactBox {
-    background: #3f51b5;
-    color: #FFF;
-    margin: -110px 50px 50px 50px;
-    padding-top: 30px;
-    padding-bottom: 100px;
-    padding-left: 50px;
-    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    height: 350px;
 }
 
 .mail {
