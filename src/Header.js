@@ -1,0 +1,25 @@
+import React from 'react'
+import { Container, Image } from 'react-bootstrap';
+import './App.css';
+import Footer from './Footer'
+
+export default function Header() {
+  return (
+    <header className = "head">
+        <Image src = "/me.png" style = { { borderRadius: "50%", marginLeft: "20%", marginTop: "10%", width: "35%" } }/>
+        <Container style = { { padding: '10%', paddingTop: 0 } }>
+            <h2>Hey! I am Sangeet.</h2>
+            <p>I work at Cognitree as a Java Developer Intern.</p>
+            <div>
+                <ul>
+                    <li><a href = ".">About</a></li>
+                    <li><a href = ".">Projects</a></li>
+                    <li><a href = ".">Blog</a></li>
+                    <li><a href = ".">Contact</a></li>
+                </ul>
+            </div>
+            <Footer />
+        </Container>
+    </header>
+  )
+}
