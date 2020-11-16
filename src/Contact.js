@@ -4,13 +4,10 @@ import { Container, Row } from 'react-bootstrap';
 export default function Project() {
   return (
     <div>
-        <h2 className = "heading"> Say Hi! </h2>
+        <a className = "noHover"  name = "contact"><h2 className = "heading">Say Hi! </h2></a> 
         <Container>
             <Row className = "contactBox">
-                <h3>.</h3>
-                <h3 style = { { marginTop: "100px" } }> You can look at my projects <a href = "www.github.com/sangeetds" >here </a></h3>
-                <h4 style = { { paddingTop: "100px" } }>.<br />
-                </h4>
+                <h1 style = { { marginTop: "80px",  marginRight: "30px", marginLeft: "0px"  } }> Reach out to me at <a className = "mail" href = "mailto:sangeet@saket.me">sangeet@saket.me </a></h1>
             </Row>
         </Container>
     </div>

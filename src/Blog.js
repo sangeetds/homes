@@ -4,7 +4,7 @@ import { Container, Row } from 'react-bootstrap';
 export default function Project() {
   return (
     <div>
-        <h2 className = "heading"> Blog </h2>
+        <a className = "noHover"  name = "blog"><h2 className = "heading"> Blog </h2></a> 
         <Container>
             <Row className = "blogBox">
                 <h3 style = { { marginTop: "70px" } }>So much to say <br /> yet nothign to write.</h3>

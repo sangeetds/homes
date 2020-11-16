@@ -93,6 +93,10 @@ li {
     flex: 1 100%;
 }
 
+.noHover:hover {
+    color: #000;
+}
+
 .blogBox {
     background: #ff5722;
     color: #FFF;
@@ -107,10 +111,20 @@ li {
 .contactBox {
     background: #3f51b5;
     color: #FFF;
-    text-align: center;
-    margin: -110px 50px 0px 50px;
-    padding: 50px;
+    margin: -110px 50px 50px 50px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    padding-left: 50px;
     font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
     height: 350px;
+}
+
+.mail {
+    font-size: 30px;
+    color: inherit;
+}
+
+.mail:hover {
+    text-decoration: underline;
 }
