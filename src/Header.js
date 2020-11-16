@@ -6,7 +6,7 @@ import Footer from './Footer'
 export default function Header() {
   return (
     <header className = "head">
-        <Image src = "https://github.com/sangeetds/home/blob/master/public/me.png" style = { { borderRadius: "50%", marginLeft: "20%", marginTop: "10%", width: "35%" } }/>
+        <Image src = "https://raw.githubusercontent.com/sangeetds/home/master/public/me.png" style = { { borderRadius: "30%", marginLeft: "10%", marginTop: "10%", width: "35%" } }/>
         <Container style = { { padding: '10%', paddingTop: 0 } }>
             <h2>Hey! I am Sangeet.</h2>
             <p>I work at Cognitree as a Java Developer Intern.</p>

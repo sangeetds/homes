@@ -58,6 +58,7 @@ li {
     padding: 50px;
     font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
+    height: 350px;
 }
 
 .projectBox {
@@ -68,6 +69,7 @@ li {
     padding: 50px;
     font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
+    height: 350px;
 }
 
 .right {
@@ -89,4 +91,26 @@ li {
     line-height: 0.6em;
     pointer-events: none;
     flex: 1 100%;
+}
+
+.blogBox {
+    background: #ff5722;
+    color: #FFF;
+    text-align: center;
+    margin: -110px 50px 0px 50px;
+    padding: 50px;
+    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    height: 350px;
+}
+
+.contactBox {
+    background: #3f51b5;
+    color: #FFF;
+    text-align: center;
+    margin: -110px 50px 0px 50px;
+    padding: 50px;
+    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    height: 350px;
 }
