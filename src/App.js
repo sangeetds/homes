@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './Header'
-import About from './About'
-import Blog from './Blog'
-import Contact from './Contact'
-import Project from './Project'
+import Header from './components/Header'
+import About from './components/About.js'
+import Blog from './components/Blog'
+import Contact from './components/Contact'
+import Project from './components/Project'
 import { Container } from 'react-bootstrap';
 
 function App() {

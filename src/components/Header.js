@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Image } from 'react-bootstrap';
-import './App.css';
+import '../App.css';
 import Footer from './Footer'
 
 export default function Header() {
