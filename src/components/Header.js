@@ -9,7 +9,7 @@ export default function Header() {
         <Image className = "me" src = "https://raw.githubusercontent.com/sangeetds/home/master/public/me.png" style = { { borderRadius: "30%", marginLeft: "10%", marginTop: "10%", width: "35%" } }/>
         <Container style = { { padding: '10%', paddingTop: 0 } }>
             <h2 className = "hey">Hey! I am Sangeet.</h2>
-            <p className = "work">I work at Cognitree as a Java Developer Intern.</p>
+            <p className = "work">I work at Cleartax as a Software Developer Intern.</p>
             <div className = "list">
                 <ul>
                     <li><a href = "#about">About</a></li>

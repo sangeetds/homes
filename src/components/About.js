@@ -8,10 +8,9 @@ export default function About() {
         <a className = "noHover" name = "about"> <h2 className = "heading"> About </h2> </a>
         <Container>
             <Row className = "aboutBox">
-                <h3 >I am a final year undergrad at BITS Pilani Goa Campus and an Java Developer Intern at Cognitree.</h3>
+                <h3 >I am a final year undergrad at BITS Pilani Goa Campus and work as a Software Developer Intern at ClearTax.</h3>
                 <h3 style = { { marginTop: "150px" } }> Find me where creativity meets technology.</h3>
                 <h4>Sangeet Narayan<br />
-                Ranchi, India
                 </h4>
             </Row>
         </Container>

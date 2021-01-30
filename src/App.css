@@ -163,12 +163,32 @@ li {
     .right {
         margin-top: 20px;
         margin-left: 0px;
+        margin-right: -10px;
     }
 
     .heading {
         font-size: 90px;
         margin-bottom: 100px;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .aboutBox {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .contactBox {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .projectBox {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .blogBox {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
