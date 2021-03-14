@@ -51,45 +51,47 @@ li {
     background: #98bec8;
     color: #FFF;
     text-align: center;
-    margin: -110px 50px 0px 50px;
+    margin: -110px 50px 140px 50px;
     padding: 50px;
     font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
     height: 350px;
+    width: 725px;
 }
 
 .projectBox {
     background: #3bab87;
     color: #FFF;
     text-align: center;
-    margin: -110px 50px 0px 50px;
+    margin: -110px 50px 140px 50px;
     padding: 50px;
     font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
     height: 350px;
+    width: 725px;
 }
 
 .blogBox {
     background: #ff5722;
     color: #FFF;
     text-align: center;
-    margin: -110px 50px 0px 50px;
+    margin: -110px 50px 140px 50px;
     padding: 50px;
     font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
     height: 350px;
+    width: 725px;
 }
 
 .contactBox {
     background: #3f51b5;
     color: #FFF;
-    margin: -110px 50px 50px 50px;
-    padding-top: 30px;
-    padding-bottom: 100px;
-    padding-left: 50px;
+    margin: -110px 50px 140px 50px;
+    padding: 50px;
     font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
     height: 350px;
+    width: 725px;
 }
 
 .right {
