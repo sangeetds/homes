@@ -1,6 +1,7 @@
 .head {
     position: fixed;
     overflow: auto;
+    height: 800px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -13,9 +14,12 @@
 }
 
 .footer{
-  margin-top: 8rem;
   padding: 1%;
-  width: 100%;
+  width: 30%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: white;
 }
 
 a{
@@ -51,53 +55,52 @@ li {
     background: #98bec8;
     color: #FFF;
     text-align: center;
-    margin: -110px 50px 140px 50px;
-    padding: 50px;
+    margin: -110px 50px 50px 50px;
+    padding: 8%;
+    height: 80%;
     font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
-    height: 350px;
-    width: 725px;
 }
 
 .projectBox {
     background: #3bab87;
     color: #FFF;
     text-align: center;
-    margin: -110px 50px 140px 50px;
-    padding: 50px;
+    margin: -110px 50px 50px 50px;
+    padding: 8%;
+    height: 80%;
     font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
-    height: 350px;
-    width: 725px;
 }
 
 .blogBox {
     background: #ff5722;
     color: #FFF;
     text-align: center;
-    margin: -110px 50px 140px 50px;
-    padding: 50px;
+    margin: -110px 50px 50px 50px;
+    padding: 8%;
+    height: 80%;
     font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
-    height: 350px;
-    width: 725px;
 }
 
 .contactBox {
     background: #3f51b5;
     color: #FFF;
-    margin: -110px 50px 140px 50px;
-    padding: 50px;
+    margin: -110px 50px 50px 50px;
+    padding: 16%;
+    height: 80%;
     font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
     font-weight: 400;
-    height: 350px;
-    width: 725px;
 }
 
 .right {
     background: #ddd;
-    float: right;
-    margin-left: 30%;
+    height: 100%;
+    width: 70%;
+    position: fixed;
+    right: 0;
+    top: 0;
 }
 
 .right ::selection {
@@ -130,42 +133,29 @@ li {
     text-decoration: underline;
 }
 
+.dropdownMenu {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     .head {
-        position: relative;
-        padding-left: 10px;
-        height: 0px;
-        width: 100%;
-        display: inline-block;
-        overflow:visible;
+        overflow: hidden;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
     }
 
     .footer {
         display: none;
     }
 
-    ul {
-        display: none;
-    }
-
-    .me {
-        display: none;
-    }
-
-    .work {
-        display: none;
-    }
-
     .hey {
-        margin-bottom: -20px;
-        padding: 0;
-        width: 300px;
+        display: none;
     }
 
     .right {
-        margin-top: 20px;
-        margin-left: 0px;
-        margin-right: -10px;
+        width: 100%;
+        margin-top: 10%;
     }
 
     .heading {
@@ -173,24 +163,23 @@ li {
         margin-bottom: 100px;
         text-align: center;
     }
-}
 
-@media only screen and (max-width: 440px) {
-    .aboutBox {
-        margin-left: 0px;
-        margin-right: 0px;
+    .me {
+        display: none;
     }
-    .contactBox {
-        margin-left: 0px;
-        margin-right: 0px;
+
+    ul {
+        position: fixed;
+        top: -100px;
     }
-    .projectBox {
-        margin-left: 0px;
-        margin-right: 0px;
+
+    li {
+        display: inline;
+        padding: 5%;
     }
-    .blogBox {
-        margin-left: 0px;
-        margin-right: 0px;
+
+    .work {
+        display: none;
     }
 }
 
