@@ -195,7 +195,6 @@ li {
 
 @media only screen and (max-width: 768px) {
     .head {
-        overflow: hidden;
         position: fixed; /* Set the navbar to fixed position */
         top: 0; /* Position the navbar at the top of the page */
         width: 100%; /* Full width */
@@ -215,23 +214,68 @@ li {
     }
 
     .heading {
-        font-size: 90px;
+        font-size: 80px;
         margin-bottom: 100px;
-        text-align: center;
+        margin-left: 5px;
+        text-align: left;
     }
+
+    .aboutBox {
+        margin: 0%;
+        margin-top: -110px;
+    }
+
+    .projectBox {
+        margin: 0%;
+        margin-top: -110px;
+    }
+
+    .blogBox {
+        margin: 0%;
+        margin-top: -110px;
+    }
+
+    .contactBox {
+        margin: 0%;
+        margin-top: -110px;
+    }
+
+    .workBox {
+        margin: 0%;
+        margin-top: 10px;
+    }
+
+    .projectBoxFirst {
+        margin: 0%;
+        background-size: contain;
+        margin-top: 10px;
+    }
+
+    .projectBoxSecond {
+        margin: 0%;
+        margin-top: 10px;
+        background-size: 100%;
+    }
+
+    .projectBoxThird {
+        margin: 0%;
+        margin-top: 10px;
+        background-size: 150%;
+    }
+
 
     .me {
         display: none;
     }
 
     ul {
-        position: fixed;
-        top: -100px;
+        margin-top: 3%;
+        margin-left: -7%;
     }
 
     li {
         display: inline;
-        padding: 5%;
+        margin-right: 5%;
     }
 
     .work {

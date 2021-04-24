@@ -24,8 +24,8 @@ export default function About() {
                 <Row className="workBox">
                     <h1
                         style={{
-                            marginLeft: '40px',
-                            fontSize: '80px',
+                            marginLeft: '10px',
+                            fontSize: '40px',
                             fontWeight: '800',
                             position: 'relative',
                             lineHeight: '0.9em',
