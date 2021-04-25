@@ -110,7 +110,7 @@ export default function Project() {
                 <Row className="projectBoxThird">
                     <h1
                         style={{
-                            marginLeft: '20px',
+                            marginLeft: '0px',
                             fontSize: '60px',
                             fontWeight: '800',
                             position: 'relative',
