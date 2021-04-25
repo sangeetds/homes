@@ -1,6 +1,8 @@
 .head {
     position: fixed;
     overflow: auto;
+    background: #000;
+    color: #FFF;
     height: 800px;
     top: 0;
     left: 0;
@@ -17,24 +19,20 @@
     padding: 1%;
     width: 30%;
     position: fixed;
-    left: 0;
+    left: 1;
     bottom: 0;
     color: white;
 }
 
 a{
     font-weight: 900;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
-    color: #000;
+    color: #FFF;
 }
 
 a:active {
   color: blue;
-}
-
-a:visited {
-  color: green;
 }
 
 a:hover {
@@ -52,28 +50,26 @@ li {
 }
 
 .aboutBox {
-    background: #98bec8;
+    background: #ff5722;
     color: #FFF;
     text-align: center;
     margin: -110px 50px 50px 50px;
-    text-shadow: 2px 2px #000;
     padding: 8%;
     height: 80%;
-    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
 }
 
 .workBox {
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.5)), url(images/cleartax_logo.png);
-    background-size: cover;
+    background-image: url(images/cleartax_logo.png);
+    background-size: 100%;
     color: #000;
     text-align: center;
-    text-shadow: 2px 2px #FFF;
     margin: -40px 50px 50px 50px;
     padding: 8%;
     height: 80%;
-    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 14px;
 }
 
 .projectBox {
@@ -81,83 +77,79 @@ li {
     color: #FFF;
     text-align: center;
     margin: -110px 50px 50px 50px;
-    text-shadow: 2px 2px #000;
     padding: 10%;
     height: 80%;
-    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 14px;
 }
 
 .projectBoxFirst {
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.5)), url(images/isdb_logo_app.png);
+    background-image:  url(images/isdb_logo_app.png);
     background-size: cover;
     color: #000;
     text-align: center;
-    text-shadow: 2px 2px #FFF;
     margin: -40px 50px 50px 50px;
     padding: 8%;
     padding-top: 4%;
     padding-bottom: 12%;
     height: 80%;
-    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 14px;
 }
 
 .projectBoxSecond {
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url(images/tetris_logo_app.png);
-    background-size: cover;
+    background-image: url(images/tetris_logo_app.png);
+    background-size: 100%;
     color: #f9d696;
     text-align: center;
     margin: -40px 50px 50px 50px;
-    text-shadow: 2px 2px #000;
     padding: 8%;
-    padding-top: 4%;
-    padding-bottom: 12%;
+    padding-top: 1%;
+    padding-bottom: 28%;
     height: 80%;
-    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 14px;
 }
 
 .projectBoxThird {
-    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(images/expense_logo_app.png);
+    background-image: url(images/expense_logo_app.png);
     background-size: cover;
-    color: #11606e;
+    color: #444;
     text-align: center;
     margin: -40px 50px 50px 50px;
-    text-shadow: 2px 2px #e0ee99;
     padding: 8%;
     padding-top: 4%;
-    padding-bottom: 12%;
+    padding-bottom: 28%;
     height: 80%;
-    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 14px;
 }
 
 .blogBox {
-    background: #ff5722;
+    background: #3f51b5;
     color: #FFF;
     text-align: center;
     margin: -110px 50px 50px 50px;
     padding: 8%;
     padding-bottom: 16%;
     height: 80%;
-    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
     font-weight: 400;
 }
 
 .contactBox {
-    background: #3f51b5;
+    background: #5d56eb;
     color: #FFF;
     margin: -110px 50px 50px 50px;
     padding: 12%;
     padding-bottom: 16%;
     height: 80%;
-    font-family: LabGrotesque-Regular,Helvetica\ Neue,Helvetica,Arial,sans-serif;
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
     font-weight: 400;
 }
 
 .right {
-    background: #ddd;
+    background: #FFF;
     overflow: scroll;
     height: 100%;
     width: 70%;

@@ -1,15 +1,17 @@
 import React from 'react'
-import { Container, Image } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import '../App.css'
+import logo from '../images/me.png'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
     return (
         <header className="head">
-            <Image
+            <img
                 className="me"
-                src="https://raw.githubusercontent.com/sangeetds/home/master/public/me.png"
+                alt="That's me"
+                src={logo}
                 style={{
                     borderRadius: '30%',
                     marginLeft: '10%',
@@ -17,9 +19,24 @@ export default function Header() {
                     width: '35%',
                 }}
             />
-            <Container style={{ padding: '10%', paddingTop: 0 }}>
+            <Container
+                style={{
+                    padding: '10%',
+                    paddingTop: '0',
+                    fontSize: '20px',
+                    fontWieght: '300',
+                    letterSpacing: '10',
+                    lineHeight: '1.5',
+                    fontFamily: 'Montserrat, sans-serif',
+                }}
+            >
                 <h2 className="hey">Hey! I am Sangeet.</h2>
-                <p className="work">
+                <p
+                    className="work"
+                    style={{
+                        fontSize: '18px',
+                    }}
+                >
                     I work at Cleartax as a Software Developer Intern.
                 </p>
                 <div className="list">

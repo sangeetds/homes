@@ -62,12 +62,22 @@ export default function Project() {
                         >
                             You can find the documentation of the backend
                             applicaion{' '}
-                            <a href="https://pure-ridge-30175.herokuapp.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/">
+                            <a
+                                href="https://pure-ridge-30175.herokuapp.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/"
+                                style={{
+                                    color: 'blue',
+                                }}
+                            >
                                 {' '}
                                 here{' '}
                             </a>
                             and you can find more about the app at{' '}
-                            <a href="https://github.com/sangeetds/isdb-android-app">
+                            <a
+                                href="https://github.com/sangeetds/isdb-android-app"
+                                style={{
+                                    color: 'blue',
+                                }}
+                            >
                                 {' '}
                                 here.{' '}
                             </a>
@@ -77,7 +87,6 @@ export default function Project() {
                 <Row className="projectBoxSecond">
                     <h1
                         style={{
-                            marginLeft: '20px',
                             fontSize: '80px',
                             fontWeight: '800',
                             position: 'relative',
@@ -92,14 +101,8 @@ export default function Project() {
                             The classic game implemented for Android. The user
                             can play simple tetris games with this android app.
                             This application is written in Kotlin and uses
-                            Google Room for storing data.{' '}
-                        </p>
-                        <p
-                            style={{
-                                marginTop: '16%',
-                            }}
-                        >
-                            You can find more about the app{' '}
+                            Google Room for storing data. You can find more
+                            about the app{' '}
                             <a href="https://github.com/sangeetds/Tetris">
                                 {' '}
                                 here.{' '}
@@ -124,15 +127,14 @@ export default function Project() {
                         <p>
                             A web app built with MERN(MongoDB, Express.js,
                             React.js, Node.js) stack which helps in easy and
-                            maintable track of your expenses and income.{' '}
-                        </p>
-                        <p
-                            style={{
-                                marginTop: '16%',
-                            }}
-                        >
-                            You can have a look at the app{' '}
-                            <a href="https://intense-fjord-30851.herokuapp.com">
+                            maintable track of your expenses and income. You can
+                            have a look at the app{' '}
+                            <a
+                                href="https://intense-fjord-30851.herokuapp.com"
+                                style={{
+                                    color: 'blue',
+                                }}
+                            >
                                 {' '}
                                 here.{' '}
                             </a>

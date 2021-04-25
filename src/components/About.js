@@ -22,22 +22,10 @@ export default function About() {
                     </h4>
                 </Row>
                 <Row className="workBox">
-                    <h1
-                        style={{
-                            marginLeft: '10px',
-                            fontSize: '40px',
-                            fontWeight: '800',
-                            position: 'relative',
-                            lineHeight: '0.9em',
-                        }}
-                    >
-                        {' '}
-                        Life at ClearTax{' '}
-                    </h1>
                     <h3
                         style={{
-                            marginTop: '20%',
-                            marginBottom: '20%',
+                            marginTop: '35%',
+                            marginDown: '20%',
                         }}
                     >
                         {' '}
