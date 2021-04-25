@@ -5,11 +5,11 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Project from "./components/Project";
 import { Container } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
 	return (
-		<Router>
+		<Router baseName="/home">
 			<div>
 				<Container>
 					<Header />
