@@ -36,7 +36,7 @@ export default function Project() {
                 <Row className="projectBoxFirst">
                     <h1
                         style={{
-                            marginLeft: '40px',
+                            marginLeft: '20px',
                             fontSize: '80px',
                             fontWeight: '800',
                             position: 'relative',
@@ -77,7 +77,7 @@ export default function Project() {
                 <Row className="projectBoxSecond">
                     <h1
                         style={{
-                            marginLeft: '40px',
+                            marginLeft: '20px',
                             fontSize: '80px',
                             fontWeight: '800',
                             position: 'relative',
@@ -110,8 +110,8 @@ export default function Project() {
                 <Row className="projectBoxThird">
                     <h1
                         style={{
-                            marginLeft: '40px',
-                            fontSize: '80px',
+                            marginLeft: '20px',
+                            fontSize: '60px',
                             fontWeight: '800',
                             position: 'relative',
                             lineHeight: '0.9em',
