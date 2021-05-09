@@ -2,7 +2,6 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import '../App.css'
 import logo from '../images/me.png'
-import Footer from './Footer'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
@@ -55,7 +54,6 @@ export default function Header() {
                         </li>
                     </ul>
                 </div>
-                <Footer className="foot" />
             </Container>
         </header>
     )
