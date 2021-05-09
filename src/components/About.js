@@ -24,8 +24,9 @@ export default function About() {
                 <Row className="workBox">
                     <h3
                         style={{
-                            marginTop: '35%',
+                            marginTop: '30%',
                             marginDown: '20%',
+                            fontSize: '20px',
                         }}
                     >
                         {' '}

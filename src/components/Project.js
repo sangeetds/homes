@@ -25,7 +25,7 @@ export default function Project() {
                             projects and code so that people can access, learn,
                             provide feedback and build upon it. Here, I have
                             listed some of my favorite projects. You can look at
-                            them all at my{' '}
+                            them all on my{' '}
                             <a href="https://github.com/sangeetds">
                                 {' '}
                                 Github profile{' '}
@@ -50,18 +50,18 @@ export default function Project() {
                         <p>
                             {' '}
                             The IMDb for Songs. An Android App to find, rate and
-                            share your favorite songs. The app and the backend
-                            APIs are all written in pure Kotlin. For the
-                            backend, Spring is used as the framework and MongoDB
-                            has been used to store the data.{' '}
+                            share your favourite songs. The app and the backend
+                            APIs are all written in pure Kotlin. Spring is used
+                            as the framework, and MongoDB has been used to store
+                            the data.{' '}
                         </p>
                         <p
                             style={{
                                 marginTop: '10%',
                             }}
                         >
-                            You can find the documentation of the backend
-                            applicaion{' '}
+                            You can find the backend application documentation
+                            here, and you can find more about the app here.{' '}
                             <a
                                 href="https://pure-ridge-30175.herokuapp.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/"
                                 style={{
@@ -99,7 +99,7 @@ export default function Project() {
                     <h3>
                         <p>
                             The classic game implemented for Android. The user
-                            can play simple tetris games with this android app.
+                            can play simple Tetris games with this android app.
                             This application is written in Kotlin and uses
                             Google Room for storing data. You can find more
                             about the app{' '}

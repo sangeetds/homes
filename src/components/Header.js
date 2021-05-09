@@ -39,12 +39,12 @@ export default function Header() {
                     I work at Cleartax as a Software Developer Intern.
                 </p>
                 <div className="list">
-                    <ul>
+                    <ul style={{ listStyleType: 'none' }}>
                         <li>
                             <Link to="/">About</Link>
                         </li>
                         <li>
-                            <Link to="/blog">Blog</Link>
+                            <Link to="/blog">Articles</Link>
                         </li>
                         <li>
                             <Link to="/projects">Projects</Link>

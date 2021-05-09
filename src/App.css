@@ -34,12 +34,13 @@ a:hover {
 }
 
 ul {
-  list-style-type: none;
+    list-style-position: inside;
   margin-top: 20%;
   padding-left: 0;
 }
 
 li {
+    display: list-item;
     margin-bottom: 4%;
 }
 
@@ -51,7 +52,7 @@ li {
     padding: 8%;
     height: 80%;
     font-family:'Helvetica Neue' !important;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .workBox {
@@ -128,10 +129,23 @@ font-family:'Helvetica Neue' !important;
     color: #FFF;
     text-align: center;
     margin: -98px 50px 50px 50px;
-    padding: 8%;
-    padding-bottom: 16%;
+    padding: 16%;
     height: 80%;
-font-family:'Helvetica Neue' !important;
+    font-size: 18px;
+    font-family:'Helvetica Neue' !important;
+    font-weight: 400;
+}
+
+.ktorBox {
+    background-image: url(images/kotlin-ktor.png);
+    background-size: 100%;
+    color: #FFF;
+    text-align: center;
+    margin: -48px 50px 50px 50px;
+    padding: 8%;
+    padding-bottom: 30%;
+    height: 80%;
+    font-family:'Helvetica Neue' !important;
     font-weight: 400;
 }
 
