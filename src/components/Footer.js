@@ -1,10 +1,9 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
-import { Container } from 'react-bootstrap'
 
 export default function Footer() {
     return (
-        <Container className="footer">
+        <div className="footer">
             <SocialIcon
                 url="http://linkedin.com/in/sangeetnarayan"
                 style={margin}
@@ -20,7 +19,7 @@ export default function Footer() {
                 style={margin}
                 bgColor="#EEE"
             />
-        </Container>
+        </div>
     )
 }
 

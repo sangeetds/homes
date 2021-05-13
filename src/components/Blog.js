@@ -1,21 +1,20 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 export default function Project() {
     return (
         <div>
             <h2 className="heading"> Articles </h2>
-            <Container>
-                <Row className="blogBox">
+            <div>
+                <div className="blogBox">
                     <h3>
                         Unfrequently penning down my thoughts on technology,
                         travel, projects keeping me busy, life in general and
                         more. If I wrote more, this page would have been called
                         a blog.
                     </h3>
-                </Row>
-                <Row className="ktorBox">
+                </div>
+                <div className="ktorBox">
                     <Link to="/ktor-rest-api">
                         <h1
                             style={{
@@ -34,8 +33,8 @@ export default function Project() {
                             REST APIs.{' '}
                         </p>
                     </h3>
-                </Row>
-            </Container>
+                </div>
+            </div>
         </div>
     )
 }

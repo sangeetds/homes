@@ -1,13 +1,12 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap'
 import Footer from './Footer'
 
 export default function Project() {
     return (
         <div>
             <h2 className="heading">Say Hi! </h2>
-            <Container>
-                <Row className="contactBox">
+            <div>
+                <div className="contactBox">
                     <h1
                         style={{
                             marginTop: '80px',
@@ -20,8 +19,8 @@ export default function Project() {
                         </a>
                     </h1>
                     <Footer />
-                </Row>
-            </Container>
+                </div>
+            </div>
         </div>
     )
 }

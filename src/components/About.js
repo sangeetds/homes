@@ -1,13 +1,12 @@
 import React from 'react'
 import '../App.css'
-import { Container, Row } from 'react-bootstrap'
 
 export default function About() {
     return (
         <div>
             <h2 className="heading"> About </h2>{' '}
-            <Container>
-                <Row className="aboutBox">
+            <div>
+                <div className="aboutBox">
                     <h3>
                         Hey there! I'm Sangeet, a final year undergrad at BITS
                         Pilani Goa Campus and a budding Software Developer.
@@ -20,8 +19,8 @@ export default function About() {
                         Sangeet Narayan
                         <br />
                     </h4>
-                </Row>
-                <Row className="workBox">
+                </div>
+                <div className="workBox">
                     <h3
                         style={{
                             marginTop: '30%',
@@ -35,8 +34,8 @@ export default function About() {
                         for others and that's what we are doing at Cleartax,
                         making financial life easier for millions of Indians.
                     </h3>
-                </Row>
-            </Container>
+                </div>
+            </div>
         </div>
     )
 }

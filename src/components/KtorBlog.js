@@ -1,5 +1,6 @@
 import React from 'react'
 import ktor from '../images/k.png'
+import Gist from 'react-gist'
 
 export default function KtorBlog() {
     return (
@@ -102,11 +103,6 @@ export default function KtorBlog() {
                     </a>
                     , Maven or Gradle to set up your project.{' '}
                 </p>
-                <p>
-                    This is how your <b>pom.xml</b> or <b>build.gradle</b> file
-                    might look like.
-                </p>
-                <p>And this how your project structure might look.</p>
                 <h2 style={{ marginTop: '10%' }}> Let's build the server </h2>
                 <p>
                     To run a Ktor application, you need to create a server
@@ -130,11 +126,22 @@ export default function KtorBlog() {
                             changes without any recompilation.
                         </li>
                     </ul>{' '}
-                    Let's begin with an embeddedServer to create a simple
-                    server. Let's give a look at the <b>Application.kt</b> file
-                    in the src directory. It might contain the code for
-                    engineMain if you created the project with the Intellij
-                    plugin. You may replace the code with this code.
+                    <p>
+                        Let's begin with an embeddedServer to create a simple
+                        server. Let's give a look at the <b>Application.kt</b>{' '}
+                        file in the src directory. It might contain the code for
+                        engineMain if you created the project with the Intellij
+                        plugin. You may replace the code with this code.
+                    </p>
+                    <div
+                        style={{
+                            fontSize: '14px',
+                            marginLeft: '-18%',
+                            marginRight: '-14%',
+                        }}
+                    >
+                        <Gist id="60e4bfdf66e7d5e0e32d456eca0f74d3" />
+                    </div>
                     <p>Let's dissect the code.</p>
                     <ol style={{ marginTop: '3%' }}>
                         <li>
@@ -154,7 +161,7 @@ export default function KtorBlog() {
                         </li>
                         <li>
                             We have defined a route, which will respond to all{' '}
-                            <b>GET</b> requests made to <b>/</b>
+                            <b>GET</b> requests made to. <b>/</b>
                         </li>
                         <li>
                             This will treat the HTTP call and respond with a
@@ -162,30 +169,225 @@ export default function KtorBlog() {
                             check our server first by replying{' '}
                             <b>`Hello World!`</b>
                         </li>
+                        <li> This would start up the server.</li>
                     </ol>
                     <p>
                         Let's run the application and see whether everything's
-                        working fine or not. You might see something like this
-                        in your console. You can click on the address on the
-                        console or go to your browser and hit{' '}
-                        <b>localhost:8080</b> (given you passed 8080 as the port
-                        value). (given you passed 8080 as the port value). You
-                        might see `Hello World!` on your browser screen. The
-                        browser serves as an effective way to make GET requests
-                        but has no mean to make any other type of requests.
-                        Therefore, we will use <b>curl</b> for making further
-                        requests. You can even use Intellij IDEA's in-built HTTP
-                        client or Postman to make requests.
+                        working fine or not. Open your browser and go to the
+                        address <b>localhost:8080</b> (given you passed 8080 as
+                        the port value). You might see `Hello World!` on your
+                        browser screen. The browser serves as an effective way
+                        to make GET requests but has no mean to make any other
+                        type of requests. Therefore, we will use <b>cURL</b> for
+                        making further requests. You can even use Intellij
+                        IDEA's in-built HTTP client or Postman to make requests.
+                        The curl command for making a get request to our current
+                        endpoint will be:
+                        <pre>
+                            <code class="language-html">
+                                {' '}
+                                curl localhost:8080{' '}
+                            </code>
+                        </pre>
+                        There are a few changes that we can do our server. Let's
+                        replace the routing endpoints with routing functions
+                        that would match the requests. We will replace our
+                        original route with a <b>get</b> function that now only
+                        needs to take the URL and the code to handle the
+                        request.
                     </p>
+                    <div
+                        style={{
+                            fontSize: '14px',
+                            marginLeft: '-18%',
+                            marginRight: '-14%',
+                        }}
+                    >
+                        <Gist id="98264c5624979c580e325ecf5f5c2afd" />
+                    </div>
                 </p>
+                <h2 style={{ marginTop: '10%' }}> Let's create our store </h2>
+                Let's have some pets for our store. For that we will create a
+                data class in <b>Pet.kt</b>. Data class is yet another feature
+                of Kotlin which are used for classes that stores data. The
+                compiler automatically derives field accessors, hashCode(),
+                equals(), toString(), as well as the useful copy() and
+                componentN() functions which reduces a lot of boilerplate code.
+                Creating a simple Pet class becomes as simple as:
+                <p>
+                    <div
+                        style={{
+                            fontSize: '14px',
+                            marginLeft: '-18%',
+                            marginRight: '-14%',
+                        }}
+                    >
+                        <Gist id="14d45d510d93a1ae718add24e3f5dff5" />
+                    </div>
+                    <p>
+                        We have introduced a <b>id</b> attribute which serves as
+                        a little hack to get unique object identifiers. This
+                        isn't the best approach but it will make work for now.
+                    </p>
+                    <p>
+                        We can now add pets to our store by making a
+                        initialising a list of pets in our <b>Application.kt</b>{' '}
+                        file.
+                    </p>
+                    <div
+                        style={{
+                            fontSize: '14px',
+                            marginLeft: '-18%',
+                            marginRight: '-14%',
+                        }}
+                    >
+                        <Gist id="8d1c4308641ecaa01cc3b066fe061836" />
+                    </div>
+                </p>
+                <h2 style={{ marginTop: '10%' }}> Updating our endpoints </h2>
+                <p>
+                    Now for any GET requests, we can try returning the pets that
+                    we have in our store. Update your <b>get</b> function to
+                    return the list instead of the text.
+                </p>
+                <div
+                    style={{
+                        fontSize: '14px',
+                        marginLeft: '-18%',
+                        marginRight: '-14%',
+                    }}
+                >
+                    <Gist id="11bedc62984605ed090f22f731051fd0" />
+                </div>
+                <p>
+                    Let's run our server again and check the results in a
+                    browser. Open any browser and go to <b>localhost:8080</b>.
+                    What do you see? No need to refresh your browser, you
+                    wouldn't see anything there.
+                </p>
+                <p>
+                    Why do we see nothing on our screen? If you go back to your
+                    IDE/console you will see that ktor has thrown an exception
+                    starting like this:
+                </p>
+                <pre>
+                    <code
+                        style={{
+                            fontSize: '18px',
+                            marginLeft: '-16%',
+                            marginRight: '-16%',
+                            display: 'block' /* or inline-block */,
+                            textOverflow: 'ellipsis',
+                            wordWrap: 'break-word',
+                            overflow: 'hidden',
+                            maxHeight: '5.4em',
+                            lineHeight: '1.8em',
+                        }}
+                    >
+                        java.lang.IllegalArgumentException: <br />
+                        Response pipeline couldn't transform 'class
+                        java.util.ArrayList' to the OutgoingContent
+                    </code>
+                </pre>
+                <p>
+                    {' '}
+                    Ktor is just trying to say that it has no way to actually
+                    send our <b>petList</b> in a format that can be read by the
+                    browser. Client and server mostly interacts with texts or
+                    JSON and we just need to tell Ktor how to convert our{' '}
+                    <b>petList</b> into such format. We will have to do two
+                    things. First, we need to install a feature, namely{' '}
+                    <b>ContentNegotiation</b> which is used to negotiate the
+                    types between the client and the server and
+                    serialize/deserialize the contents. For
+                    serialization/deserialization we can use either the{' '}
+                    <b>kotlinx.serialization</b> library or maybe <b>Gson</b>,
+                    <b> Jackson</b>, etc. We will go with the in-built one.
+                </p>
+                <div
+                    style={{
+                        fontSize: '14px',
+                        marginLeft: '-18%',
+                        marginRight: '-14%',
+                    }}
+                >
+                    <Gist id="2341d890661deffd4f3135d0f8564fb7" />
+                </div>
+                <p>
+                    We will install ContentNegotiation inside our server and
+                    call the <b>json</b> method. You might face some imports or
+                    unresolved reference error, in that case update your{' '}
+                    <b>pom.xml</b> or <b>build.gradle</b> file to include the{' '}
+                    <b>ktor-serialization</b> dependency. For our second step,
+                    we will also add the serializtion plugin. Finally, we will
+                    add the <b>@Serializable</b> annotation to our <b>Pet</b>{' '}
+                    data class in order to generate the serializer function.
+                </p>
+                <div
+                    style={{
+                        fontSize: '14px',
+                        marginLeft: '-18%',
+                        marginRight: '-14%',
+                    }}
+                >
+                    <Gist id="e95f0844f19b2ff0fb054155400371ac" />
+                </div>
+                <p>
+                    {' '}
+                    Now if you open your browser and go to <b>localhost:8080</b>
+                    , you will see an array of Pet JSONs. We can now even add
+                    more routings. We can have another GET route to get pets by
+                    their id. We can pass pet-id in our url (we put id in curly
+                    braces in our path to denote that it's a variable) and get
+                    information about a particular pet. We can add a <b>post</b>{' '}
+                    function which will help us add another pet to our pet store
+                    and even a <b> delete </b> function to allow people to adopt
+                    a pet.
+                </p>
+                <div
+                    style={{
+                        fontSize: '14px',
+                        marginLeft: '-18%',
+                        marginRight: '-14%',
+                    }}
+                >
+                    <Gist id="64624bf4689319399d6a78d8eb75e45c" />
+                </div>
+                <p>
+                    Our application here just contains four routes but as the
+                    number can grow over time and this routing tree may become
+                    difficult to manage. We can actually club the routes
+                    according to their functionalities in different modules.
+                    These modules can be shifted to different files and can be
+                    even managed in different packages according to their
+                    features.
+                </p>
+                <div
+                    style={{
+                        fontSize: '14px',
+                        marginLeft: '-18%',
+                        marginRight: '-14%',
+                    }}
+                >
+                    <Gist id="4724cfc70e85b2368afd460ebb414001" />
+                </div>
                 <h2 style={{ marginTop: '10%' }}> What's next? </h2>
+                <p>
+                    We can add persistence to our application. Till now we were
+                    hardcoding objects for our application which would get lost
+                    as soon as our server stops. We can prevent this by using
+                    any database of our choice such as MySQL, PostgreSQL, etc.
+                    or even NoSQL options such as MongoDB. We can build a UI
+                    such as a web app (Kotlin now also targets JS and can help
+                    create seamless web apps) or an Android app to help display
+                    our data better.
+                </p>
+                <h2 style={{ marginTop: '10%' }}> Wrapping Up </h2>
                 <p style={{ marginBottom: '10%' }}>
-                    We can add persistence to our application by using any
-                    database of our choice(KTOR INTEGRATION WITH A DB) such as
-                    MySQL, PostgreSQL, etc. or even NoSQL options such as
-                    MongoDB. We can build a UI such as a web app (Kotlin now
-                    also targets JS and can help create seamless web apps) or an
-                    Android app to help display our data better.
+                    That's it! We have build our pet store very easily and in no
+                    time. There a lot other features that Ktor offers that we
+                    could discuss in another article. Do let me know your
+                    thoughts in comments down below!
                 </p>
             </div>
         </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
 import '../App.css'
 import logo from '../images/me.png'
 import { Link } from 'react-router-dom'
@@ -18,7 +17,7 @@ export default function Header() {
                     width: '35%',
                 }}
             />
-            <Container
+            <div
                 style={{
                     padding: '10%',
                     paddingTop: '0',
@@ -54,7 +53,7 @@ export default function Header() {
                         </li>
                     </ul>
                 </div>
-            </Container>
+            </div>
         </header>
     )
 }

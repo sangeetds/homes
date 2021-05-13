@@ -5,17 +5,16 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import KtorBlog from "./components/KtorBlog";
 import Project from "./components/Project";
-import { Container } from "react-bootstrap";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
 	return (
 		<Router baseName="/home">
 			<div>
-				<Container>
+				<div>
 					<Header />
-				</Container>
-				<Container className="right">
+				</div>
+				<div className="right">
 					<Switch>
 						<Route path="/ktor-rest-api">
 							<KtorBlog />
@@ -33,7 +32,7 @@ function App() {
 							<About />
 						</Route>
 					</Switch>
-				</Container>
+				</div>
 			</div>
 		</Router>
 	);

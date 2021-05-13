@@ -1,12 +1,11 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap'
 
 export default function Project() {
     return (
         <div>
             <h2 className="heading"> Projects </h2>
-            <Container>
-                <Row className="projectBox">
+            <div>
+                <div className="projectBox">
                     <h3>
                         <p>
                             I always strive to make out time for projects. I
@@ -32,8 +31,8 @@ export default function Project() {
                             </a>
                         </p>
                     </h3>
-                </Row>
-                <Row className="projectBoxFirst">
+                </div>
+                <div className="projectBoxFirst">
                     <h1
                         style={{
                             marginLeft: '20px',
@@ -83,8 +82,8 @@ export default function Project() {
                             </a>
                         </p>
                     </h3>
-                </Row>
-                <Row className="projectBoxSecond">
+                </div>
+                <div className="projectBoxSecond">
                     <h1
                         style={{
                             fontSize: '80px',
@@ -109,8 +108,8 @@ export default function Project() {
                             </a>
                         </p>
                     </h3>
-                </Row>
-                <Row className="projectBoxThird">
+                </div>
+                <div className="projectBoxThird">
                     <h1
                         style={{
                             marginLeft: '0px',
@@ -140,8 +139,8 @@ export default function Project() {
                             </a>
                         </p>
                     </h3>
-                </Row>
-            </Container>
+                </div>
+            </div>
         </div>
     )
 }
