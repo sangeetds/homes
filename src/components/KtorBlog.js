@@ -207,9 +207,9 @@ export default function KtorBlog() {
                     </div>
                 </p>
                 <h2 style={{ marginTop: '10%' }}> Let's create our store </h2>
-                Let's have some pets for our store. For that we will create a
+                Let's have some pets for our store. For that, we will create a
                 data class in <b>Pet.kt</b>. Data class is yet another feature
-                of Kotlin which are used for classes that stores data. The
+                of Kotlin, which are used for classes that stores data. The
                 compiler automatically derives field accessors, hashCode(),
                 equals(), toString(), as well as the useful copy() and
                 componentN() functions which reduces a lot of boilerplate code.
@@ -225,14 +225,13 @@ export default function KtorBlog() {
                         <Gist id="14d45d510d93a1ae718add24e3f5dff5" />
                     </div>
                     <p>
-                        We have introduced a <b>id</b> attribute which serves as
-                        a little hack to get unique object identifiers. This
-                        isn't the best approach but it will make work for now.
+                        We have introduced an <b>id</b> attribute which serves
+                        as a bit of hack to get unique object identifiers. This
+                        isn't the best approach, but it will do work for now.
                     </p>
                     <p>
-                        We can now add pets to our store by making a
-                        initialising a list of pets in our <b>Application.kt</b>{' '}
-                        file.
+                        We can now add pets to our store by initialising a list
+                        of pets in our <b>Application.kt</b> file.
                     </p>
                     <div
                         style={{
@@ -260,10 +259,10 @@ export default function KtorBlog() {
                     <Gist id="11bedc62984605ed090f22f731051fd0" />
                 </div>
                 <p>
-                    Let's run our server again and check the results in a
-                    browser. Open any browser and go to <b>localhost:8080</b>.
-                    What do you see? No need to refresh your browser, you
-                    wouldn't see anything there.
+                    Let's rerun our server and check the results in a browser.
+                    Open any browser and go to <b>localhost:8080</b>. What do
+                    you see? No need to refresh your browser; you wouldn't see
+                    anything there.
                 </p>
                 <p>
                     Why do we see nothing on our screen? If you go back to your
@@ -291,18 +290,17 @@ export default function KtorBlog() {
                 </pre>
                 <p>
                     {' '}
-                    Ktor is just trying to say that it has no way to actually
-                    send our <b>petList</b> in a format that can be read by the
-                    browser. Client and server mostly interacts with texts or
-                    JSON and we just need to tell Ktor how to convert our{' '}
-                    <b>petList</b> into such format. We will have to do two
-                    things. First, we need to install a feature, namely{' '}
-                    <b>ContentNegotiation</b> which is used to negotiate the
-                    types between the client and the server and
+                    Ktor is just trying to say that it has no way to send our{' '}
+                    <b>petList</b> in a format that the browser can read. Client
+                    and server mainly interact with texts or JSON, and we need
+                    to tell Ktor how to convert our <b>petList</b> into such
+                    format. We will have to do two things. First, we need to
+                    install a feature, namely <b>ContentNegotiation</b>, to
+                    negotiate the types between the client and the server and
                     serialize/deserialize the contents. For
-                    serialization/deserialization we can use either the{' '}
-                    <b>kotlinx.serialization</b> library or maybe <b>Gson</b>,
-                    <b> Jackson</b>, etc. We will go with the in-built one.
+                    serialization/deserialization, we can use either the{' '}
+                    <b>kotlinx. serialization</b> library or maybe Gson,
+                    Jackson, etc. We will go with the in-built one.
                 </p>
                 <div
                     style={{
@@ -315,13 +313,13 @@ export default function KtorBlog() {
                 </div>
                 <p>
                     We will install ContentNegotiation inside our server and
-                    call the <b>json</b> method. You might face some imports or
-                    unresolved reference error, in that case update your{' '}
+                    call the <b>json()</b> method. You might face some imports
+                    or unresolved reference error, in that case update your{' '}
                     <b>pom.xml</b> or <b>build.gradle</b> file to include the{' '}
                     <b>ktor-serialization</b> dependency. For our second step,
-                    we will also add the serializtion plugin. Finally, we will
+                    we will also add the serialization plugin. Finally, we will
                     add the <b>@Serializable</b> annotation to our <b>Pet</b>{' '}
-                    data class in order to generate the serializer function.
+                    data class to generate the serializer function.
                 </p>
                 <div
                     style={{
@@ -334,13 +332,13 @@ export default function KtorBlog() {
                 </div>
                 <p>
                     {' '}
-                    Now if you open your browser and go to <b>localhost:8080</b>
-                    , you will see an array of Pet JSONs. We can now even add
-                    more routings. We can have another GET route to get pets by
-                    their id. We can pass pet-id in our url (we put id in curly
-                    braces in our path to denote that it's a variable) and get
+                    If you open your browser and go to <b>localhost:8080</b>,
+                    you will see an array of Pet JSONs. We can now even add more
+                    routings. We can have another GET route to get pets by their
+                    id. We can pass pet-id in our url (we put id in curly braces
+                    in our path to denote that it's a variable) and get
                     information about a particular pet. We can add a <b>post</b>{' '}
-                    function which will help us add another pet to our pet store
+                    function that will help us add another pet to our pet store
                     and even a <b> delete </b> function to allow people to adopt
                     a pet.
                 </p>
@@ -354,13 +352,12 @@ export default function KtorBlog() {
                     <Gist id="64624bf4689319399d6a78d8eb75e45c" />
                 </div>
                 <p>
-                    Our application here just contains four routes but as the
-                    number can grow over time and this routing tree may become
-                    difficult to manage. We can actually club the routes
-                    according to their functionalities in different modules.
-                    These modules can be shifted to different files and can be
-                    even managed in different packages according to their
-                    features.
+                    Our application here contains four routes, but the number
+                    can grow over time. This routing tree may become challenging
+                    to manage. We can club the routes according to their
+                    functionalities in different modules. According to their
+                    features, these modules can be shifted to separate files and
+                    can be even managed in other packages.
                 </p>
                 <div
                     style={{
@@ -373,10 +370,10 @@ export default function KtorBlog() {
                 </div>
                 <h2 style={{ marginTop: '10%' }}> What's next? </h2>
                 <p>
-                    We can add persistence to our application. Till now we were
+                    We can add persistence to our application. We were
                     hardcoding objects for our application which would get lost
                     as soon as our server stops. We can prevent this by using
-                    any database of our choice such as MySQL, PostgreSQL, etc.
+                    any database of our choices such as MySQL, PostgreSQL, etc.
                     or even NoSQL options such as MongoDB. We can build a UI
                     such as a web app (Kotlin now also targets JS and can help
                     create seamless web apps) or an Android app to help display
@@ -384,10 +381,10 @@ export default function KtorBlog() {
                 </p>
                 <h2 style={{ marginTop: '10%' }}> Wrapping Up </h2>
                 <p style={{ marginBottom: '10%' }}>
-                    That's it! We have build our pet store very easily and in no
-                    time. There a lot other features that Ktor offers that we
-                    could discuss in another article. Do let me know your
-                    thoughts in comments down below!
+                    That's it! We have built our pet store very quickly. There a
+                    lot of other features that Ktor offers that we could discuss
+                    in another article. Do let me know your thoughts in the
+                    comments down below!
                 </p>
             </div>
         </div>
